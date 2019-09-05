@@ -4,4 +4,5 @@ R2FLAGS=$(shell pkg-config --cflags --libs r_core) -fPIC
 
 all:
 	$(CC) -shared core_test.c $(R2FLAGS) -o coretest.$(LIBEXT)
+	mkdir -p $(PLUGDIR)
 	cp -f coretest.$(LIBEXT) $(PLUGDIR)
