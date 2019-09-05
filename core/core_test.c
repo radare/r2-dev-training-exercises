@@ -19,10 +19,10 @@ RCorePlugin r_core_plugin_lala = {
 	.call = r_cmd_anal_call,
 };
 
-#ifndef R2_PLUGIN_INCORE
+//#ifndef R2_PLUGIN_INCORE
 R_API RLibStruct radare_plugin = {
 	.type = R_LIB_TYPE_CORE,
 	.data = &r_core_plugin_lala,
 	.version = R2_VERSION
 };
-#endif
+//#endif
