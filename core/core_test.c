@@ -1,16 +1,14 @@
-/* radare - Copyright 2014-2018 pancake, defragger */
+/* radare - Copyright 2019 pancake */
 
-#include <r_types.h>
 #include <r_core.h>
 
 static int r_cmd_anal_call(void *user, const char *input) {
 	RCore *core = (RCore *) user;
 	if (!strncmp (input, "lala", 4)) {
-		eprintf ("HANDLING THIS\n");
+		eprintf ("HANDLING THIS LALA\n");
 		return true;
 	}
-	return true;
-	//return false;
+	return false;
 }
 
 // PLUGIN Definition Info
